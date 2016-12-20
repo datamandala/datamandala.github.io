@@ -1,15 +1,15 @@
 ---
 layout: post
 title: My new blog!
-published: true
-status: publish
+published: 
+status: process
 draft: 
 ---
- 
+
 I used to blog a lot. Mostly about SQL Server. 
 This was some time ago when SQL Server performance and database development was key. 
 Nowadays I work mostly with data and am trying to focus on data-driven results. 
- 
- 
- 
+
+
+
 Here is my old site [SQLConcept.com](http://SQLConcept.com).

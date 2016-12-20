@@ -14,7 +14,7 @@ I am a data messenger.
 
 ### More Information
 
-"If you torture data enough - it will eventually confess." - Unknown
+"If you torture data long enough - it will eventually confess." - Unknown
 
 ### Contact me
 

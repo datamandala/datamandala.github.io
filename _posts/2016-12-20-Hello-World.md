@@ -9,4 +9,4 @@ Nowadays I work mostly with data and am trying to focus on data-driven results.
 
 
 
-Here is my old site [SQLConcept.com](https://SQLConcept.com).
+Here is my old site [SQLConcept.com](http://SQLConcept.com).

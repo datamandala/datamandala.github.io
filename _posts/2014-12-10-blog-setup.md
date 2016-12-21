@@ -8,6 +8,32 @@ draft: false
 tags: R Jekyll RStudio
 ---
  
+A few days ago I noticed a post by John Johnson which inspired me: [I Set up new data analysis blog](http://realizationsinbiostatistics.blogspot.se/2016/12/i-set-up-new-data-analysis-blog.html). 
+I sent an email to John, and he was incredibly nice to guide me through the installation process. His answer was to the point:
+ 
+"I basically followed instructions at these two URLs:
+•	http://jmcglone.com/guides/github-pages/
+•	http://andysouth.github.io/blog-setup/
+ 
+Overall, what you really do is the following steps:
+1: Fork Barry Clark’s Jekyll-now repository over to a specially-named repository on your Github account (specifically, <username>.github.io just like the URL)
+2: Sync locally
+3: Edit some configuration files and maybe the template files provided
+4: Set up some additional folders _Rmd, etc. You may want to .gitignore them
+5: Set up an RStudio project in the local directory. You may want to .gitignore the .Rproj file, too
+6: Get the function from the second URL above
+7: After you compose in RMarkdown and make sure you have status: and published: in your front matter, save in _Rmd and run the function – be aware, I found a bug (really just some missing code) where the status and published updates were not saved.
+8: Sync to your repository to publish
+ 
+Good luck!"
+ 
+## Thanks, John! 
+ 
+I am starting my own data blog. Below is the orginal blog post that came with the template. 
+ 
+ 
+ 
+ 
 In the first post of this new blog I'll outline how I've set the blog up. 
  
 * writing posts in `Rmarkdown`
@@ -58,24 +84,15 @@ url <- paste0('http://apps.who.int/gho/athena/api/GHO/',code,'.csv?filter=COUNTR
 #read query result into dataframe
 dF <- read.csv(url,as.is=TRUE)
 library(rworldmap)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in library(rworldmap): there is no package called 'rworldmap'
-{% endhighlight %}
-
-
-
-{% highlight r %}
 sPDF <- joinCountryData2Map(dF, nameJoinColumn="COUNTRY", joinCode="ISO3")
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## Error in eval(expr, envir, enclos): could not find function "joinCountryData2Map"
+## 24 codes from your data successfully matched countries in the map
+## 0 codes from your data failed to match with a country code in the map
+## 219 codes from the map weren't represented in your data
 {% endhighlight %}
 
 
@@ -84,11 +101,7 @@ sPDF <- joinCountryData2Map(dF, nameJoinColumn="COUNTRY", joinCode="ISO3")
 mapCountryData(sPDF,nameColumnToPlot="Numeric",catMethod="fixedWidth",mapRegion="africa", mapTitle="Gambian sleeping sickness cases in 2013")
 {% endhighlight %}
 
-
-
-{% highlight text %}
-## Error in eval(expr, envir, enclos): could not find function "mapCountryData"
-{% endhighlight %}
+![plot of chunk 14-12-10-rworldmap](/figures/14-12-10-rworldmap-1.png)
  
 The code syntax highlighting and dark grey background for both code and R text outputs are what come as the default with Jekyll-Now. I'm a little unsure about them. They seem to be specified in [_highlights.scss](https://github.com/AndySouth/andysouth.github.io/blob/master/_scss/_highlights.scss), perhaps I'll look at modifying later.   
  

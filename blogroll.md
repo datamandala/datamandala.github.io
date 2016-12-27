@@ -22,3 +22,4 @@ permalink: /blogroll/
 ## Libraries
 
 * [Thomas Reinholdsson](https://github.com/reinholdsson)
+* [Thomas Lin Pedersen](http://www.data-imaginist.com/) - the author of [ggforce](https://github.com/thomasp85/ggforce)

@@ -1,0 +1,35 @@
+---
+layout: post
+title: What I have read, heard or seen on 2016-12-13.
+author: Feodor Georgiev
+published: true
+status: publish
+draft: false
+tags: R Jupyter notebooks RStudio research 
+---
+  
+A nice T-SQl piece of code to split a string with FTparser in SQL Server 2008+: [Split string with sys.dm_fts_parser](http://sqlblogcasts.com/blogs/tomaztsql/archive/2010/10/20/split-string-with-sys-dm-fts-parser.aspx)
+ 
+ 
+Also, I learned how to read data from SQL Server into RMarkdown:
+  
+```{r sql}
+library(RODBC)
+cn <- odbcDriverConnect(connection="Driver={SQL Server};server=.;database=test;trusted_connection=yes;")
+ 
+myQuery <- sqlQuery(cn, "
+                    -- Create table
+                    
+                    
+                    
+                    SELECT *
+                    FROM    MyTable        
+                    
+                    
+                    ")
+ 
+ 
+myQuery
+ 
+```
+ 

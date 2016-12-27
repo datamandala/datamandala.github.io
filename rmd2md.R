@@ -3,7 +3,7 @@
 #' 'processed' will be converted to markdown (with out_ext file extention, '.markdown'
 #' by default). It will change the published parameter to 'true' and change the
 #' status parameter to 'publish'.
-#' 
+#'
 #' @param path_site path to the local root storing the site files
 #' @param dir_rmd directory containing R Markdown files (inputs)
 #' @param dir_md directory containing markdown files (outputs)
@@ -15,16 +15,17 @@
 #' @author Jason Bryer <jason@bryer.org> edited by Andy South
 rmd2md <- function( path_site = getwd(),
                     dir_rmd = "_rmd",
-                    dir_md = "_posts",                              
+                    dir_md = "_posts",
                     #dir_images = "figures",
                     url_images = "figures/",
-                    out_ext='.md', 
-                    in_ext='.rmd', 
-                    recursive=FALSE) {
+                    out_ext='.md',
+                    in_ext='.rmd',
+                    recursive=FALSE,
+                    process_all=FALSE) {
   
   require(knitr, quietly=TRUE, warn.conflicts=FALSE)
   
-  #andy change to avoid path problems when running without sh on windows 
+  #andy change to avoid path problems when running without sh on windows
   files <- list.files(path=file.path(path_site,dir_rmd), pattern=in_ext, ignore.case=TRUE, recursive=recursive)
   
   for(f in files) {
@@ -38,7 +39,7 @@ rmd2md <- function( path_site = getwd(),
         status <- unlist(strsplit(content[statusLine], ':'))[2]
         status <- sub('[[:space:]]+$', '', status)
         status <- sub('^[[:space:]]+', '', status)
-        if(tolower(status) == 'process') {
+        if(tolower(status) == 'process' || process_all) {
           #This is a bit of a hack but if a line has zero length (i.e. a
           #black line), it will be removed in the resulting markdown file.
           #This will ensure that all line returns are retained.
@@ -57,16 +58,16 @@ rmd2md <- function( path_site = getwd(),
           render_jekyll(highlight = "pygments")
           #render_jekyll(highlight = "prettify") #for javascript
           
-          opts_knit$set(out.format='markdown') 
+          opts_knit$set(out.format='markdown')
           
           # andy BEWARE don't set base.dir!! it caused me problems
-          # "base.dir is never used when composing the URL of the figures; it is 
-          # only used to save the figures to a different directory. 
+          # "base.dir is never used when composing the URL of the figures; it is
+          # only used to save the figures to a different directory.
           # The URL of an image is always base.url + fig.path"
           # https://groups.google.com/forum/#!topic/knitr/18aXpOmsumQ
           
           opts_knit$set(base.url = "/")
-          opts_chunk$set(fig.path = url_images)                     
+          opts_chunk$set(fig.path = url_images)
           
           #andy I could try to make figures bigger
           #but that might make not work so well on mobile
@@ -75,8 +76,12 @@ rmd2md <- function( path_site = getwd(),
           
           try(knit(text=content, output=outFile), silent=FALSE)
           
+          fileConn<-file(file.path(path_site,dir_rmd,f))
+          writeLines(content, fileConn)
+          close(fileConn)
+          
         } else {
-          warning(paste("Not processing ", f, ", status is '", status, 
+          message(paste(" Not processing ", f, ", status is '", status,
                         "'. Set status to 'process' to convert.", sep=''))
         }
       } else {
@@ -88,3 +93,5 @@ rmd2md <- function( path_site = getwd(),
   }
   invisible()
 }
+
+rmd2md(process_all=TRUE)

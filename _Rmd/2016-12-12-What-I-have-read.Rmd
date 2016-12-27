@@ -5,9 +5,9 @@ author: Feodor Georgiev
 published: true
 status: publish
 draft: false
-tags: R Jupyter notebooks RStudio research
+tags: R Jupyter notebooks RStudio research 
 ---
- 
+ test
 One of the greatest blog posts I have read recently was the [How the Circle Line rogue train was caught with data] (https://blog.data.gov.sg/how-we-caught-the-circle-line-rogue-train-with-data-79405c86ab6a)
  
 It seems like a serious effort was made to solve a real challenge. What was really impressive was the transformation of data to show where trains are between stations and to mark their direction of travel. It is also impressive that the data scientists got to blog about it and to publish the research and their code. 

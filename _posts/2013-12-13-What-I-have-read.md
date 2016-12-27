@@ -5,7 +5,7 @@ author: Feodor Georgiev
 published: true
 status: publish
 draft: false
-tags: R Jupyter notebooks RStudio research
+tags: R Jupyter notebooks RStudio research 
 ---
  
 A nice T-SQl piece of code to split a string with FTparser in SQL Server 2008+: [Split string with sys.dm_fts_parser](http://sqlblogcasts.com/blogs/tomaztsql/archive/2010/10/20/split-string-with-sys-dm-fts-parser.aspx)

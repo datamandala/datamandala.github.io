@@ -17,17 +17,7 @@ Also, I learned how to read data from SQL Server into RMarkdown:
 library(RODBC)
 cn <- odbcDriverConnect(connection="Driver={SQL Server};server=.;database=test;trusted_connection=yes;")
  
-myQuery <- sqlQuery(cn, "
-                    -- Create table
-                    
-                    
-                    
-                    SELECT *
-                    FROM    MyTable        
-                    
-                    
-                    ")
- 
+myQuery <- sqlQuery(cn, "SELECT * FROM    MyTable ")
  
 myQuery
  

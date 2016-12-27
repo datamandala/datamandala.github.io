@@ -1,0 +1,28 @@
+---
+layout: post
+title: What I have read, heard or seen on 2016-12-16.
+author: Feodor Georgiev
+published: true
+status: publish
+draft: false
+tags: R Jupyter notebooks RStudio research 
+---
+  
+Data mining with Rattle and R: [One Page R: A Survival Guide to Data Science with R](http://blog.revolutionanalytics.com/2016/12/one-page-r.html)
+ 
+More about Rattle and R: [Rattle and R book](https://www.amazon.com/dp/1441998896/ref=cm_sw_r_tw_dp_x_rHguybDKBP41D)
+What is [Rattle](http://rattle.togaware.com/)?
+ 
+A very interesting article on how learning is performed when there is not enough time: [Reinforcement Learning](https://www.oreilly.com/ideas/reinforcement-learning-explained?imm_mid=0eb8e0&cmp=em-data-na-na-newsltr_20161214)
+ 
+ 
+ 
+Predictive analytiscs and ML: [Predictive analytics and machine learning: A dynamic duo](http://www.zdnet.com/article/predictive-analytics-machine-learning/)
+ 
+Here is a great article about the future of our markets: [The future is B2B – bot 2 bot](https://thinkgrowth.org/the-future-is-b2b-bot-to-bot-commerce-c90a4fcbbbb8) 
+And the future is already happening. I have already seen bots which were developed by people so they can iterate through listings on marketplaces for second-hand items with the basic idea to send emails with price offers to interesting items. It is very simple, really: the developer of the bot programs it to look for items of interest, the developer defines the search criteria (brand, price range, etc). Then the bot scrapes the newly posted items and sends an email to the seller. Of course, the bot has some logic to offer a lower, but reasonable, price. In the meantime, the developer of the bot can focus on other things, instead of on reading endless listings. 
+Of course, some might be confused by the web scraping techniques. After all, many companies nowadays are doing a lot of customizations to protect their sites from being scraped. In vain, more or less. After all, nowadays there are software packages to iterate through web pages and save screenshots. And the OCR technology is good enough to convert the screenshots to data. 
+Where is this going? :) 
+ 
+ 
+Data catalog for collaboration: http://go.alation.com/how-godaddys-data-catalog-delivered-trust-in-data

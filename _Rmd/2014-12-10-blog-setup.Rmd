@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blog with RStudio, R, RMarkdown, Jekyll and Github.
-author: Andy South
+author: Feodor Georgiev
 published: true
 status: publish
 draft: false

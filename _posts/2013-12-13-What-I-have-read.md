@@ -10,34 +10,8 @@ tags: R Jupyter notebooks RStudio research
  
 A nice T-SQl piece of code to split a string with FTparser in SQL Server 2008+: [Split string with sys.dm_fts_parser](http://sqlblogcasts.com/blogs/tomaztsql/archive/2010/10/20/split-string-with-sys-dm-fts-parser.aspx)
  
--- Create table
  
-CREATE TABLE #MyTable ( id INT, text VARCHAR(500) );
- 
--- Insert some staging data
- 
-INSERT  INTO #MyTable
-        SELECT  1 AS id ,
-                'You can write me an email' AS text
-        UNION ALL
-        SELECT  2 AS id ,
-                'on my private email address: tomaz.tsql@gmail.com' AS text
-        UNION ALL
-        SELECT  3 AS id ,
-                'or even on this imaginary email address tomaz.tsql@nowhere.at' AS text
-        UNION ALL
-        SELECT  4 AS id ,
-                'or on my fake non-existing email address not-exist@all';
- 
---Return all words
- 
-SELECT  display_term AS words
-FROM    #MyTable
-        CROSS APPLY sys.dm_fts_parser('"' + [text] + '"', 0, 0, 0)
-GROUP BY display_term;
- 
- 
-How to read data from SQL Server into RMarkdown:
+Also, I learned how to read data from SQL Server into RMarkdown:
  
 
 {% highlight r %}

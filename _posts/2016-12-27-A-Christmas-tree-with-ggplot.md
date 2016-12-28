@@ -69,6 +69,30 @@ ggtitle('The Analytics Lab wishes you a Merry Christmas')
 
 
 {% highlight text %}
+## Warning: closing unused RODBC handle 9
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning: closing unused RODBC handle 8
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning: closing unused RODBC handle 7
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning: closing unused RODBC handle 6
+{% endhighlight %}
+
+
+
+{% highlight text %}
 ## Warning: Removed 7 rows containing missing values (geom_point).
 {% endhighlight %}
 

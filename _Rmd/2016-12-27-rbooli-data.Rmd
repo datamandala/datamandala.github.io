@@ -35,7 +35,7 @@ a <- booli("rbooliblog", "UBmptOLYsZ1Zlnd7cUO796SZeyluNP9TjWQ3c01m")
 ```
  
  
-```{r setupKey1, eval=FALSE, include=TRUE}
+```{r setupKey1}
  
 #you will need to get your own key; I am just posting the code here, but am excluding my key
 #a <- booli("your_callerId", "your_privateKey")
@@ -73,6 +73,5 @@ As you can see, there is plenty of data to mine. There is geolocation, price, ho
  
 And if there is data to mine, I have plenty of questions to ask. :)
  
-Lets see what questions we come up with:
+In my next post I will explore some ways to collect data from the API and to visualize trends. For example, I would be curious to see the selling price of properties for a specific area for the past 3 years and how the trend is per property type. 
  
-1. 

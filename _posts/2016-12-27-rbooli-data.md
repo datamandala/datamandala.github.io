@@ -42,6 +42,25 @@ data <- a$get(path = "sold", q = "Stockholm", limit = 10)
  
 head(data[1:3])
 {% endhighlight %}
+
+
+
+{% highlight text %}
+##   location.address.streetAddress location.position.latitude
+## 1            Filipstadsbacken 58                   59.23780
+## 2             Svandammsvägen 17A                   59.30129
+## 3                 Heklagatan 66E                   59.41258
+## 4               Sällhetsvägen 24                   59.38334
+## 5              Västmannagatan 69                   59.34350
+## 6                   Sveavägen 39                   59.33737
+##   location.position.longitude
+## 1                    18.10476
+## 2                    18.01362
+## 3                    17.93736
+## 4                    17.82506
+## 5                    18.04562
+## 6                    18.06143
+{% endhighlight %}
  
  
 The query above sends a request to the API to return 10 properties that were sold in the Stockholm region. 
@@ -69,6 +88,5 @@ As you can see, there is plenty of data to mine. There is geolocation, price, ho
  
 And if there is data to mine, I have plenty of questions to ask. :)
  
-Lets see what questions we come up with:
+In my next post I will explore some ways to collect data from the API and to visualize trends. For example, I would be curious to see the selling price of properties for a specific area for the past 3 years and how the trend is per property type. 
  
-1. 

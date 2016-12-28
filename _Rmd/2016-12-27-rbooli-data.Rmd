@@ -17,7 +17,7 @@ Before getting started, you have to read and accept Booli's Terms of Use and the
 After this, let's install the rbooli package:
  
 ```{r setupPackages, include=TRUE}
-knitr::opts_chunk$set(echo = TRUE)
+ 
 #check if the package is already installed
  
 if(!require(rbooli)){

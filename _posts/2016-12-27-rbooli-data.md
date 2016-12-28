@@ -18,7 +18,6 @@ After this, let's install the rbooli package:
  
 
 {% highlight r %}
-knitr::opts_chunk$set(echo = TRUE)
 #check if the package is already installed
  
 if(!require(rbooli)){

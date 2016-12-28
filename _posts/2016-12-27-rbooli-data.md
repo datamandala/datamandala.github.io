@@ -24,6 +24,62 @@ if(!require(rbooli)){
     devtools::install_github("reinholdsson/rbooli")
   
 }
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: rbooli
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: curl
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: httr
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+## Attaching package: 'httr'
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:curl':
+## 
+##     handle_reset
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: digest
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: rjson
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: plyr
+{% endhighlight %}
+
+
+
+{% highlight r %}
 #load the package
 library(rbooli)
 {% endhighlight %}
@@ -70,5 +126,5 @@ And if there is data to mine, I have plenty of questions to ask. :)
  
 In my next post I will explore some ways to collect data from the API and to visualize trends. For example, I would be curious to see the selling price of properties for a specific area for the past 3 years and how the trend is per property type. 
  
- 
+åä 
  

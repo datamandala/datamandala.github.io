@@ -75,5 +75,5 @@ And if there is data to mine, I have plenty of questions to ask. :)
  
 In my next post I will explore some ways to collect data from the API and to visualize trends. For example, I would be curious to see the selling price of properties for a specific area for the past 3 years and how the trend is per property type. 
  
- 
+åä 
  

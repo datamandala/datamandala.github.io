@@ -78,9 +78,21 @@ Lets test if the rbooli package can get other parameters, for example, can we ge
  
 # the date parameters are exluding the values, so if you want to get the Dec 20th, you need to do a range between 19th to the 21st to get the 20th. This is how the API is developed, I guess. 
  
-data <- a$get(path = "listings", q = "Stockholm", minPublished="2016-12-19", maxPublished="2016-12-21",maxListPrice = "4000000", limit = 50)
+data1 <- a$get(path = "listings", q = "Stockholm", minPublished="2016-12-19", maxPublished="2016-12-21",maxListPrice = "4000000", limit = 50)
  
-head(data[1:3])
+head(data1[1:3])
+{% endhighlight %}
+
+
+
+{% highlight text %}
+##   booliId listPrice  published
+## 1 2179831   3180000 2016-12-20
+## 2 2229873   2995000 2016-12-20
+## 3 2230662   3795000 2016-12-20
+## 4 2230095   1895000 2016-12-20
+## 5 2232804   1495000 2016-12-20
+## 6 2232781   3450000 2016-12-20
 {% endhighlight %}
  
  

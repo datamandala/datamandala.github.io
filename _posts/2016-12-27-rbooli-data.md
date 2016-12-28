@@ -35,11 +35,6 @@ Next, lets call the API with the callerId and privateKey we received from Booli:
  
 
 {% highlight r %}
-knitr::opts_chunk$set(
-	echo = TRUE,
-	message = TRUE,
-	warning = TRUE
-)
 #you will need to get your own key; I am just posting the code here, but am excluding my key
 #a <- booli("your_callerId", "your_privateKey")
  
@@ -60,11 +55,6 @@ Lets test if the rbooli package can get other parameters, for example, can we ge
  
 
 {% highlight r %}
-knitr::opts_chunk$set(
-	echo = TRUE,
-	message = TRUE,
-	warning = TRUE
-)
 #you will need to get your own key; I am just posting the code here, but am excluding my key
  
 # the date parameters are exluding the values, so if you want to get the Dec 20th, you need to do a range between 19th to the 21st to get the 20th. This is how the API is developed, I guess. 

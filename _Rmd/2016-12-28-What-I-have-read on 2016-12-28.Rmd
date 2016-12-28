@@ -1,0 +1,17 @@
+---
+layout: post
+title: What I have read, heard or seen on 2016-12-28.
+author: Feodor Georgiev
+published: true
+status: publish
+draft: false
+tags: R Jupyter notebooks RStudio research 
+---
+  
+Just read the most amazing answer on StackOverflow! Someone had asked about how to determine the optimal number of clusters in R, and the answer was so graphical and so detailed, it was just awesome! 
+ 
+Here is the answer: [Cluster analysis in R: determine the optimal number of clusters](http://stackoverflow.com/a/15376462/2872891)
+ 
+Here is anoter link with a suggestion on how to perform a [model-based clustering](http://stats.stackexchange.com/questions/129682/best-clustering-algorithm-for-real-estate-data) 
+ 
+Another great post i read was the Zillow presentation on how they estimate real estate prices with their data engine. It is a great presentation about infrastructure: [How R is used at Zillow to estimate housing values](http://blog.revolutionanalytics.com/2015/08/how-r-is-used-at-zillow-to-estimate-housing-values.html)

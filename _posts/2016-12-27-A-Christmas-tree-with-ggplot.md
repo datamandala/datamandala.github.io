@@ -49,29 +49,7 @@ dat2$siz[row] <- runif(1,0.5,1.5)
 dat2$col[row] <- sample(1:5, 1)
 }
 }
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning: closing unused RODBC handle 4
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning: closing unused RODBC handle 3
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning: closing unused RODBC handle 1
-{% endhighlight %}
-
-
-
-{% highlight r %}
+ 
 # plot the christmas tree
 ggplot() +
 geom_bar(data = dat1, aes(x=x1, y=x2),stat = "identity", fill = '#31a354') +

@@ -24,62 +24,6 @@ if(!require(rbooli)){
     devtools::install_github("reinholdsson/rbooli")
   
 }
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: rbooli
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: curl
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: httr
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'httr'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:curl':
-## 
-##     handle_reset
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: digest
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: rjson
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: plyr
-{% endhighlight %}
-
-
-
-{% highlight r %}
 #load the package
 library(rbooli)
 {% endhighlight %}

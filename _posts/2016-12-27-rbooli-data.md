@@ -40,7 +40,7 @@ knitr::opts_chunk$set(
 )
 #you will need to get your own key; I am just posting the code here, but am excluding my key
  
-a <- booli("rbooliblog", "UBmptOLYsZ1Zln**********luNP9TjWQ3c01m")
+a <- booli("rbooliblog", "UBmptOLYsZ*******eyluNP9TjWQ3c01m")
  
 data <- a$get(path = "sold", q = "Stockholm", limit = 50)
  
@@ -55,7 +55,3 @@ And if there is data to mine, I have plenty of questions to ask. :)
  
  
  
-Ditt callerId är: rbooliblog
-Din privateKey är: UBmptOLYsZ1Zlnd7cUO796SZeyluNP9TjWQ3c01m
- 
-Du hittar hjälp för att komma igång här, ett bra tips kan vara att starta i vår API-utforskare för att bekanta dig med API:et.

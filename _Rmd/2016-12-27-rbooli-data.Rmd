@@ -55,7 +55,3 @@ And if there is data to mine, I have plenty of questions to ask. :)
  
  
  
-Ditt callerId är: rbooliblog
-Din privateKey är: UBmptOLYsZ1Zlnd7cUO796SZeyluNP9TjWQ3c01m
- 
-Du hittar hjälp för att komma igång här, ett bra tips kan vara att starta i vår API-utforskare för att bekanta dig med API:et.

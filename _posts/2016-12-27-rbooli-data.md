@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Property sales analytics with rbooli.
+title: Property sales analytics with rbooli .
 author: Feodor Georgiev
 published: true
 status: publish

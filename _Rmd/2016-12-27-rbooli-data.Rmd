@@ -14,7 +14,7 @@ There are many unexplored areas in the real estate data in Sweden, and this post
  
 Before getting started, you have to read and accept Booli's Terms of Use and then finally register to receive an API key by e-mail.
  
-After this, let's install the rbooli package:
+After this, let's install the rbooli package: 
  
 ```{r setupPackages, include=TRUE}
  

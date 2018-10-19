@@ -12,6 +12,6 @@ Nowadays I work mostly with data and am trying to focus on data-driven results. 
  
  
  
-Here is my old site [SQLConcept.com](http://SQLConcept.com).
+Here is my old site [SQLConcept.com](http://SQLConcept.com). 
  
 And here is where I write for [Simple-talk](https://www.simple-talk.com/author/feodor-georgiev/) and [Redgate](https://www.red-gate.com/blog/author/feodor-georgiev).

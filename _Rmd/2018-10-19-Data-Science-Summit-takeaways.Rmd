@@ -1,0 +1,11 @@
+---
+layout: post
+title: Data Science Summit takeaways
+author: Feodor Georgiev
+published: false
+status: publish
+draft: false
+tags: R Jekyll RStudio
+---
+ 
+test

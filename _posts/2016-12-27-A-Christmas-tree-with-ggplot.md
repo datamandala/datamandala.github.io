@@ -15,7 +15,17 @@ Thanks!
 
 {% highlight r %}
 library(ggplot2)
- 
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in library(ggplot2): there is no package called 'ggplot2'
+{% endhighlight %}
+
+
+
+{% highlight r %}
 # create data
 x <- c(8,7,6,7,6,5,6,5,4,5,4,3,4,3,2,3,2,1,0.5,0.1)
  
@@ -69,20 +79,6 @@ ggtitle('The Analytics Lab wishes you a Merry Christmas')
 
 
 {% highlight text %}
-## Warning: Removed 7 rows containing missing values (geom_point).
+## Error in ggplot(): could not find function "ggplot"
 {% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning: Removed 4 rows containing missing values (geom_point).
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning: closing unused RODBC handle 5
-{% endhighlight %}
-
-![plot of chunk setup](/figures/setup-1.png)
  

@@ -1,9 +1,11 @@
 ---
 layout: post
-title: My new blog!
+title: Data Science Summit takeaways
+author: Feodor Georgiev
 published: true
 status: publish
-draft: 
+draft: false
+tags: R Jekyll RStudio
 ---
  
 I used to blog a lot. Mostly about SQL Server. 

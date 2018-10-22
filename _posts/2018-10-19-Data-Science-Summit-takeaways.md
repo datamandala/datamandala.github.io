@@ -80,6 +80,6 @@ It just puzzles me that guilds of AI / ML and data scientists are available to t
 How big data affects societies and democracy is a whole different topic. I would just encourage data people to be responsible and to read up on social psychology as much as possible. 
  
  
-The summit was great, though. Great networking, great people and great food!
+The summit was great, though. Great networking, great people and great food! 
  
  

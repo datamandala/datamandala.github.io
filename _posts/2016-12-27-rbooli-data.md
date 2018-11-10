@@ -17,48 +17,7 @@ Before getting started, you have to read and accept Booli's Terms of Use and the
 After this, let's install the rbooli package: 
  
 
-{% highlight r %}
-#check if the package is already installed
- 
-if(!require(rbooli)){
-    devtools::install_github("reinholdsson/rbooli")
-  
-}
-{% endhighlight %}
 
-
-
-{% highlight text %}
-## Loading required package: rbooli
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning in library(package, lib.loc = lib.loc, character.only = TRUE,
-## logical.return = TRUE, : there is no package called 'rbooli'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in loadNamespace(name): there is no package called 'devtools'
-{% endhighlight %}
-
-
-
-{% highlight r %}
-#load the package
-library(rbooli)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in library(rbooli): there is no package called 'rbooli'
-{% endhighlight %}
- 
-Next, lets call the API with the callerId and privateKey we received from Booli:
 
 
 

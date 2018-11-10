@@ -85,46 +85,4 @@ Jason's function searches a folder that you specify for `.Rmd` files and then pu
 This then means that any R plot is automatically generated, saved as a png and it's address is written into the md document so that the plot is displayed in the blog. This is shown in a simple example below that queries the WHO API to get the number of cases of one of the forms of sleeping sickness in 2013.
  
 
-{% highlight r %}
-code <- "NTD_4"
-year <- 2013
-url <- paste0('http://apps.who.int/gho/athena/api/GHO/',code,'.csv?filter=COUNTRY:*;YEAR:',year)
-#read query result into dataframe
-dF <- read.csv(url,as.is=TRUE)
-library(rworldmap)
-{% endhighlight %}
 
-
-
-{% highlight text %}
-## Error in library(rworldmap): there is no package called 'rworldmap'
-{% endhighlight %}
-
-
-
-{% highlight r %}
-sPDF <- joinCountryData2Map(dF, nameJoinColumn="COUNTRY", joinCode="ISO3")
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in joinCountryData2Map(dF, nameJoinColumn = "COUNTRY", joinCode = "ISO3"): could not find function "joinCountryData2Map"
-{% endhighlight %}
-
-
-
-{% highlight r %}
-mapCountryData(sPDF,nameColumnToPlot="Numeric",catMethod="fixedWidth",mapRegion="africa", mapTitle="Gambian sleeping sickness cases in 2013")
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in mapCountryData(sPDF, nameColumnToPlot = "Numeric", catMethod = "fixedWidth", : could not find function "mapCountryData"
-{% endhighlight %}
- 
-The code syntax highlighting and dark grey background for both code and R text outputs are what come as the default with Jekyll-Now. I'm a little unsure about them. They seem to be specified in [_highlights.scss](https://github.com/AndySouth/andysouth.github.io/blob/master/_scss/_highlights.scss), perhaps I'll look at modifying later.   
- 
- 
-If you'd like to look here is the [entire source code](https://github.com/AndySouth/andysouth.github.io/) for the blog and for this [individual page](https://github.com/AndySouth/andysouth.github.io/blob/master/_rmd/2014-12-10-blog-setup.Rmd).  

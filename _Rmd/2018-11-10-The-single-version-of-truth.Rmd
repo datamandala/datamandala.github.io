@@ -10,7 +10,7 @@ tags: R Jupyter notebooks RStudio research
  
  
 I almost wee my pants every time someone talks about "single version of truth" in data. 
-
+ 
 Data and everything that derives from it is subjective, just as is our world which is based on cognitive biases. Just find the version of the truth you like in the most optimal way and run with it.
  
 By now, most people would agree that the single version of the truth is a utopia, however they would react strongly to the statement “find your version of the truth and run with it”. The strong reaction will be triggered by the natural relation between manipulation of facts to create a reality. 
@@ -18,13 +18,13 @@ By now, most people would agree that the single version of the truth is a utopia
 This reaction is logical and predictable, especially in people who are not on a CxO level and up or people who have consciously chosen jobs at big PR agencies. 
  
 The abovementioned CxOs and PR folk know very well the following:
-
+ 
 •	there is no way you are going to beat your competitors by having only a fair competitive advantage. 
-
+ 
 •	statistics are used nowadays to create realities (if you torture data long enough, it will confess). 
-
+ 
 •	the human-behaviour-as-a-service is a driving factor in any economy nowadays. 
-
+ 
  
 In reality, the executives and PR folk act daily as puppets, pulled by the forces of these rules. Their job is best done when realities are created for people and when ideas are channelled in those realities in a palatable way. 
  
